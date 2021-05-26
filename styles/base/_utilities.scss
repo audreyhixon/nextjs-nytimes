@@ -1,0 +1,36 @@
+@use '../abstracts/mixins';
+
+.responsive-img {
+    width:100%;
+    height:auto;
+}
+.alignwide{
+    @include mixins.breakpoint(tablet) {
+        margin-left: -3rem;
+        margin-right: -3rem;
+    }
+    @include mixins.breakpoint(laptop) {
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+    @include mixins.breakpoint(desktop) {
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+}
+.alignfull {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    @include mixins.breakpoint(tablet) {
+        margin-left: calc(((100vw - 40rem)/2) * -1);
+        margin-right: calc(((100vw - 40rem)/2) * -1);
+    }
+    @include mixins.breakpoint(laptop) {
+        margin-left: calc(((100vw - 45rem)/2) * -1);
+        margin-right: calc(((100vw - 45rem)/2) * -1);
+    }
+    @include mixins.breakpoint(desktop) {
+        margin-left: calc(((100vw - 50rem)/2) * -1);
+        margin-right: calc(((100vw - 50rem)/2) * -1);
+    }
+}

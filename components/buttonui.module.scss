@@ -1,0 +1,21 @@
+.btnui{
+    width: 3rem;
+    height:3rem;
+    background-color: transparent;
+    border: 0;
+    img{
+        width: 1.5rem;
+        height:1.5rem;
+    }
+    &.close{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: 1px solid #000;
+
+    }
+    &.menu {
+        background-color: white;
+        border: 1px solid #ccc;
+    }
+}

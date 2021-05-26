@@ -1,0 +1,12 @@
+@use '../abstracts/vars';
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: vars.$color_white;
+}
+
